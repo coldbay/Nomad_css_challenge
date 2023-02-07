@@ -1,0 +1,70 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+body {
+  background-color:#F6F6F6;
+  padding:50px 25px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  max-width: 770px;
+  width: 100%;
+  margin:0 auto;
+}
+
+.title_wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 10px;
+    border-bottom: 2px solid black;
+}
+
+.paris{
+    font-size:80px
+}
+
+.number{
+    font-size: 35px;
+}
+
+.text_wrapper{
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-start; 
+
+    font-size: 12px; /*자식들 다 적용*/
+}
+
+.list_wrapper{   
+    width: 240px;
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-start;
+    
+}
+
+.main_wrapper{
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap:wrap;
+    height:800px;
+}
+
+.circle{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+}
+  
+.sky{
+    background: skyblue;
+}
+  
+.gray{
+    background: gray;
+}
+  
+.green{
+    background: green;
+}
