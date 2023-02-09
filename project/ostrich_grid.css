@@ -1,0 +1,53 @@
+body {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  color: white;
+  font-size: 50px;
+}
+
+.big {
+  font-size: 100px;
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.beige {
+  background-color: beige;
+}
+
+.green {
+  background-color: green;
+}
+
+.red {
+  background-color: tomato;
+}
+
+.pink {
+  background-color: pink;
+}
+
+.purple {
+  background-color: purple;
+}
+
+.yellow {
+  background-color: orange;
+}
+
+.cherry {
+  background-color: firebrick;
+}
+
+/* for text */
+
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.red_text {
+  color: tomato;
+}

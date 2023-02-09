@@ -1,0 +1,28 @@
+.father{
+    display: grid;
+    grid-template-rows: 100px 60px 150px 50px; /*행의 크기*/
+    grid-template-columns: repeat(4, 100px);
+    gap: 10px;
+    
+}
+
+.header{
+    background-color: lawngreen;
+    grid-column: span 4; /*4칸*/
+}
+
+.content{
+    background-color: coral;
+    grid-column: 1 /-2; /*선기준- 시작기준선이 1, 음수는 뒤에서 부터*/
+    grid-row: span 2;
+}
+
+.nav{ 
+    background-color: firebrick;
+    grid-row: span 2;
+}
+
+.footer{
+    background-color: blueviolet;
+    grid-column: span 4;
+}
