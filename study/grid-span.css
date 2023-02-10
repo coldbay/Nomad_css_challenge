@@ -1,7 +1,7 @@
 .father{
     display: grid;
-    grid-template-rows: 100px 60px 150px 50px; /*행의 크기*/
-    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: [first] 100px [second] 60px [third] 150px [fourth] 50px [last]; /*선에 이름 짓에*/
+    grid-template-columns: repeat(4, 1fr); /* fraction - 차지 가능할만큼의 공간을 비율대로 나눔*/
     gap: 10px;
     
 }
@@ -14,7 +14,7 @@
 .content{
     background-color: coral;
     grid-column: 1 /-2; /*선기준- 시작기준선이 1, 음수는 뒤에서 부터*/
-    grid-row: span 2;
+    grid-row: second / fourth; /* 넘버 대신 선언한 이름으로*/
 }
 
 .nav{ 

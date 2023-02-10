@@ -1,0 +1,26 @@
+.father{
+    display: grid;
+    grid-template-rows: repeat(4, minmax(100px, 1fr)); /*행의 크기*/
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 10px;
+
+}
+
+.header{
+    background-color: lawngreen;
+    place-self: center end; /*align justify */
+}
+
+.content{
+    background-color: coral;
+}
+
+.nav{
+    background-color: firebrick;
+}
+
+.footer{
+    background-color: blueviolet;
+}
+
+

@@ -1,0 +1,32 @@
+.father{
+    display: grid;
+    gap: 10px;
+    height: 80vw;
+    
+    grid-template: /* - row, columns, areas 등 모두 종합 */
+    "header header header header" 1fr
+    "content content content nav" 2fr
+    "footer footer footer footer" 1fr / 1fr 1fr 1fr 1fr;
+}
+
+.header{
+    grid-area: header; /*area 지정에서 쓰일 이름 선언*/
+    background-color: lawngreen;
+}
+
+.content{
+    grid-area: content; 
+    background-color: coral;
+}
+
+.nav{
+    grid-area: nav; 
+    background-color: firebrick;
+}
+
+.footer{
+    grid-area: footer; 
+    background-color: blueviolet;
+}
+
+
