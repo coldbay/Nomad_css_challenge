@@ -12,33 +12,70 @@ body {
 
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15vw, 1fr));
-  grid-template-rows: repeat(6, 30vw);
-  grid-auto-rows: 30vw;
+  grid-template-rows: 15vh;
+  grid-auto-rows: 30vh;  /*오버된 다음행부터 적용*/
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    grid-column: 1/-1;
+    font-size: 80px;
 }
 
 div{
     display: flex;
-    align-items: space-between;
-    justify-content: center;
+    flex-direction: column;
+
+    justify-content: space-around;
+    align-items: center;
+    text-align: center; /*글 정렬*/
+    
 }
 
 div h1{
-    font-size: 30px;
-}
-
-div h2{
     font-size: 20px;
 }
 
-.header{
-    grid-column: 1/-1;
-    font-size: 100px;
+div h2{
+    font-size: 15px;
 }
+
 
 .empty{
     background-color: silver;
 }
 
-div:nth-child(1){
-    background-color: aquamarine;
+div:nth-of-type(1){
+    background-color: blanchedalmond;
+}
+
+div:nth-of-type(3){
+    background-color: tomato;
+}
+
+div:nth-of-type(5){
+    background-color: mediumpurple;
+}
+
+div:nth-of-type(6){
+    background-color: lawngreen;
+}
+
+div:nth-of-type(7){
+    background-color: firebrick;
+}
+
+div:nth-of-type(8){
+    background-color: skyblue;
+}
+
+div:nth-of-type(10){
+    background-color: darkgreen;
+}
+
+div:nth-of-type(12){
+    background-color: plum;
 }
