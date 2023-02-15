@@ -1,0 +1,105 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 100%;
+    height: 100vh;
+}
+
+.container{
+    width:100%;
+    height:100%;
+
+    border: solid 15px #f2e555;
+
+    display: grid;
+
+    grid-template-columns: 3% 47% 47% 3%;
+    grid-template-rows: 5% 90% 5%;
+
+    /*
+    "slogun slogun slogun slogun" 5vh
+    "left rice curry right" 90vh
+    "slogun slogun slogun slogun" 5vh / 5vw 45vw 45vw 5vw;
+    */
+}
+
+.slogun{
+    grid-column: 1/-1;
+    color:darkorange;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer{
+    grid-row-start: -2;
+}
+
+
+.left{
+    display: grid;
+
+    grid-template-rows: 3fr 2fr;
+    grid-template-columns: 1fr;
+}
+
+.leftBig{
+    background-color: darkorange;
+    color:white;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.leftNews{
+    display: grid;
+
+    grid-template-rows: 8fr 2fr;
+    grid-template-columns: 1fr;
+}
+
+.right{
+    display: grid;
+
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 1fr;
+}
+
+.rightSelect{
+    background-color: rgb(15, 157, 15);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+
+}
+
+.updown{
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+}
+
+.border{
+    border: solid 2px darkorange;
+}
+
+
+
+.rice{
+    grid-row-start: 2;
+    grid-column-start: 2;
+    background-color: rgb(243, 243, 251);
+}
+
+.curry{
+    grid-row-start: 2;
+    grid-column-start: 3;
+    background-color: goldenrod;
+}
+
+
+
