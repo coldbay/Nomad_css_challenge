@@ -26,11 +26,8 @@ body {
 
 .slogun{
     grid-column: 1/-1;
-    color:darkorange;
+    font-size: 150%;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .footer{
@@ -47,11 +44,7 @@ body {
 
 .leftBig{
     background-color: darkorange;
-    color:white;
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    color:white;  
 }
 
 .leftNews{
@@ -71,22 +64,8 @@ body {
 .rightSelect{
     background-color: rgb(15, 157, 15);
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
     color:white;
-
 }
-
-.updown{
-    writing-mode: vertical-rl;
-    text-orientation: upright;
-}
-
-.border{
-    border: solid 2px darkorange;
-}
-
 
 
 .rice{
@@ -101,5 +80,30 @@ body {
     background-color: goldenrod;
 }
 
+/*공통*/
 
+.updown{
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+}
 
+.vertical{
+    writing-mode: vertical-lr;
+    text-orientation: sideways-right;
+    
+}
+
+.border{
+    border: solid 2px darkorange;
+}
+
+.orange{
+    color:darkorange;
+    font-weight: bold;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
