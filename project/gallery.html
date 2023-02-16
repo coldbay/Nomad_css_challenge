@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="gallery.css">
+</head>
+
+<body>
+    <div class="tag">
+        <div class="border tag_text">
+            <span>Year: ALL</span>
+            <span>▼</span>
+        </div>
+        <div class="border tag_text">
+            <span>Programme: ALL</span>
+            <span>▼</span>
+        </div>
+        <div class="border tag_text">
+            <span>Themes: ALL</span>
+            <span>▼</span></div>
+        <div class="border tag_text">
+            <span>Pratice: ALL</span>
+            <span>▼</span>
+        </div>
+        <div class="border tag_text">
+            <span>Students</span>
+            <span>▼</span>
+        </div>
+    </div>
+
+    <!--
+    <div class="container border">
+        <div class="header">
+            <span>Gojang_studio</span>
+            <span>Thinking</span>
+        </div>
+        
+        <div class="paint">
+            <img src="thinking.jpg" width="100vw" height="100vh" alt="art">
+        </div>
+
+        <div class="footer">
+            <span>2020</span>
+            <span>Read more</span>
+        </div>     
+    </div>
+    -->
+    
+    <script>
+        for(i=0; i<9; i++){
+            document.write('<div class="container border"><div class="header"><span>Gojang_studio</span><span>Thinking</span></div>')
+            document.write('<div class="paint"><img src="thinking.jpg" width="100vw" height="100vh" alt="art"></div>')
+            document.write('<div class="footer"><span>2020</span><span class="read">Read more</span></div></div>')
+        }
+    </script>
+</body>
+</html>
