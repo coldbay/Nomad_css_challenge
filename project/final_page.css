@@ -1,0 +1,165 @@
+body{
+   width: 100vw;
+   height: 100vh;
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   grid-template-rows: repeat(5, 1fr); 
+}
+
+li{
+    list-style:none;
+}
+
+.border{
+    border: 2px black solid;
+}
+
+.office{
+    grid-column: 1/2;
+    grid-row: 1/-1;
+
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr 2fr;
+}
+
+.office_header{
+    grid-row: 1/2;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 1vw;
+    padding-top: 1vw;
+}
+
+
+.office_header :nth-child(2){
+    font-size: 50px;
+    font-weight: bold;
+    padding-bottom: 3vh;
+}
+
+
+.office_sheet{
+    grid-row: 2/3
+}
+
+.office_sheet li{
+    padding-left: 1vw;
+    border: 2px black solid;
+}
+
+.office_sheet li:hover{
+    background-color: gray;
+}
+
+.office_footer{
+    grid-row: -3/-1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 1vw;
+}
+
+.home{
+    grid-column: 2/3;
+    grid-row: 1/-2;
+
+    
+    padding-left: 1vw;
+}
+
+.home h1{
+    font-size: 50px;
+    padding-top: 4vh;
+}
+
+.home span{
+    display: block;
+    padding-top: 1vw;
+}
+
+.services{
+    grid-column: 2/3;
+    grid-row: span 1;
+
+    padding-left:1vw;
+    padding-top: 1vw;
+}
+
+.services h1{
+    font-size: 50px;
+    padding-top: 4vh;
+}
+
+
+.pic1{
+    grid-row: 1/-2;
+    grid-column-start: 3;
+    
+}
+
+.pic2{
+    grid-column: -2/-1;
+    grid-row: 1/3;
+}
+
+.pic3{
+    grid-column: -2/-1;
+    grid-row-start:3;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.pic3_small1{
+    grid-column: 1/2;
+    grid-row: 1/-1;
+}
+
+.pic3_small2{
+    grid-row-start: 1;
+}
+
+.pic3_small3{
+    grid-row-start: 2;
+}
+
+.pic4{
+    grid-column: -2/-1;
+    grid-row-start:-3;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.pic4_small1{
+    grid-column: 1/2;
+}
+
+.pic5{
+    grid-column: 3/-1;
+    grid-row-start:-2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 4fr;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.pic5_small1{
+    grid-column: 1/2;
+    grid-row: span 2;
+}
+
+.pic5_small2{
+    grid-column: 2/3;
+}
+
+.pic5_small3{
+    grid-column: 2/3;
+}
+
+.pic5_small4{
+    grid-column: -2/-1;
+    grid-row: 1/-1;
+}
+
